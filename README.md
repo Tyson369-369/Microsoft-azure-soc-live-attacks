@@ -5,6 +5,12 @@ Microsoft-azure-soc-live-attacks
 
 This project is an Azure honeypot + Security Operations Center (SOC) style lab. It exposes a Windows virtual machine to the public internet, collects real failed login attempts, enriches them with GeoIP data, and uses Microsoft Sentinel dashboards, KQL queries, and automated alerts to detect and visualize attacks.
 
+## Skills demonstrated
+
+- Azure: resource groups, virtual machines, VNets, NSGs, Log Analytics Workspace, Defender for Cloud, Microsoft Sentinel.  
+- SIEM and detection engineering: log collection, KQL querying, IP GeoIP enrichment, workbook/dashboard design, analytic rules, and automated playbooks.  
+- Security operations: honeypot design, brute‑force detection, attacker behavior analysis, documenting findings for a SOC‑style use case.
+
 ## Architecture
 
 **Components**
@@ -106,8 +112,4 @@ SecurityEvent
 - Certain IP addresses generated a very high number of failed logons and targeted multiple different user accounts, indicating password‑spray behavior.  
 - Attack activity occurred continuously across different hours of the day, demonstrating constant background internet scanning against exposed RDP services.  
 
-## Skills demonstrated
 
-- Azure: resource groups, virtual machines, VNets, NSGs, Log Analytics Workspace, Defender for Cloud, Microsoft Sentinel.  
-- SIEM and detection engineering: log collection, KQL querying, IP GeoIP enrichment, workbook/dashboard design, analytic rules, and automated playbooks.  
-- Security operations: honeypot design, brute‑force detection, attacker behavior analysis, documenting findings for a SOC‑style use case.
